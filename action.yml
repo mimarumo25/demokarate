@@ -1,0 +1,13 @@
+name: 'Karate testing API PUC'
+description: 'Run Karate tests apis de la iniciativas Plataforma unida de clientes (Puc)'
+author: 'Miguel Rubide'
+inputs:
+  url:
+    description: "URL to pass as script variable to test."
+    required: false
+  tests:
+    description: 'Karate file or directory path with tests.'
+    required: true
+runs:
+  using: docker
+  image: Dockerfile
